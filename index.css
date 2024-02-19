@@ -1,0 +1,525 @@
+/* google font dan yazı tipi bağlantısı */
+@import url('https://fonts.googleapis.com/css2?family=Herr+Von+Muellerhoff&family=Montserrat:ital,wght@0,400;1,300&family=Poppins:wght@300;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Herr+Von+Muellerhoff&family=Montserrat:ital,wght@0,400;1,300&family=Poppins:wght@300;500;600;700;800;900&display=swap');
+
+/* ! Resetleme Kodları */
+html {
+  scrollbar-width: none; /* Firefox için */
+  -ms-overflow-style: none; /* Internet Explorer için */
+}
+
+body::-webkit-scrollbar {
+  width: 0; /* WebKit (Chrome, Safari, Edge) için */
+}
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+a,
+a:link,
+a:visited {
+    text-decoration: none;
+    outline: none;
+    border: none;
+}
+
+ul,
+li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+section,
+span,
+p {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    border: none;
+
+}
+
+/* ! navbar-------------------------------------------- */
+header {
+    background-color: black;
+    position: fixed;
+    width: 100%;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    width: 90%;
+    padding: 10px 0;
+
+}
+
+.isim h2 a {
+    color: white;
+
+}
+
+#navlinks {
+    display: flex;
+}
+
+#navlinks li a {
+    margin-left: 15px;
+    color: #fff;
+    padding: 5px 15px;
+    border-radius: 5px;
+    transition: all 5.s ease-in-out;
+
+}
+
+#navlinks li a:hover {
+    background: #24CAAC;
+}
+
+.menu-toggle {
+    display: none;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.menu-toggle {
+    flex-direction: column;
+
+}
+
+.bar {
+    width: 30px;
+    height: 3px;
+    background-color: #fff;
+    margin: 5px 0;
+}
+
+/* ! Anasayfa---------------------------------------- */
+#anasayfa {
+    background-color: #000;
+    width: 100%;
+    height: 800px;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.cv {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+h1 {
+    font-size: 60px;
+    font-weight: 100;
+    color: #ffffff;
+    font-family: 'Courier New', Courier, monospace, cursive;
+}
+
+
+.btn-nature {
+    display: block;
+    font-size: 150%;
+    text-align: center;
+    width: 50%;
+    height: 50px;
+    margin-top: 7%;
+    margin-left: 170px;
+    background-color: #24CAAC;
+    color: #fff;
+    padding: 10px 15px;
+    border-top-left-radius: 35px;
+    border-bottom-right-radius: 35px;
+    overflow: hidden;
+}
+
+/* ! Hakkımda-------------------------------------------- */
+#hakkimda {
+
+    background-color: #ffffff;
+    margin-bottom: 150px;
+}
+
+.about-title {
+    margin: 60px 0;
+}
+
+.about-title h2 {
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    margin-left: -20px;
+    color: #000;
+    font-size: 40px;
+    font-weight: 600;
+    font-family: 'Courier New', Courier, monospace, cursive;
+}
+
+.about-title :hover {
+    color: #24CAAC;
+}
+
+.about-title h2::after {
+    content: "";
+    width: 40px;
+    height: 3px;
+    background-color: #000;
+    margin: 0 auto;
+    display: block;
+    margin-top: 10px;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.about-img {
+    width: 35%;
+}
+
+.about-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin-left: -50px;
+}
+
+.about-text {
+    width: 35%;
+}
+
+.about-text p {
+    font-size: 17px;
+    text-align: center;
+    color: #323232;
+}
+
+/* ! Projeler ------------------------------------------------- */
+#projeler {
+    background-color: #000000;
+}
+
+.about-title1 {
+    margin: 20px;
+    padding-top: 20px;
+}
+
+.about-title1 h2 {
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    margin-left: -20px;
+    color: #ffffff;
+    font-size: 40px;
+    font-weight: 600;
+    font-family: 'Courier New', Courier, monospace, cursive;
+}
+
+.about-title1 :hover {
+    color: #24CAAC;
+}
+
+.about-title1 h2::after {
+    content: "";
+    width: 40px;
+    height: 3px;
+    background-color: #ffffff;
+    margin: 0 auto;
+    display: block;
+    margin-top: 10px;
+}
+
+.proje-items {
+    width: 50%;
+    height: 500px;
+    overflow: hidden;
+    position: relative;
+}
+
+.proje {
+    display: flex;
+}
+
+.proje-items img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: .5s;
+}
+
+.overlay {
+    width: 100%;
+    height: 100%;
+    background-color: #24CAAC;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    opacity: 0.8;
+    color: #fff;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .5s;
+}
+
+.proje-items:hover .overlay {
+    top: 0;
+}
+
+.proje-items:hover img {
+    transform: scale(1.1);
+}
+
+/* ! iletişim---------------------------------------------- */
+.inneriletisim {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.childiletisim {
+    width: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.childiletisim img {
+    width: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.childiletisim form {
+    padding-left: 25%;
+    background: #ffffff;
+}
+
+.childiletisim form input,
+textarea {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 20px;
+    background: #000000;
+    border: none;
+    color: #fff;
+    resize: none;
+    border-radius: 25px;
+    transition: .3s ease-in;
+}
+
+.childiletisim form input,
+textarea :focus {
+    color: #fff;
+}
+
+.childiletisim form input :focus {
+    letter-spacing: 1px;
+}
+
+.childiletisim form textarea :focus {
+    letter-spacing: 1px;
+}
+
+.childiletisim form input:last-child {
+    margin-bottom: 0;
+    background: #24CAAC;
+    border: 1px solid #24CAAC;
+    transition: .3s;
+}
+
+.childiletisim form input:last-child:hover {
+    background: transparent;
+    color: #000000;
+}
+
+/* ! İLETİŞİM 2 ---------------------------------------------------- */
+footer {
+    background-color: #000;
+}
+
+.contact {
+    display: flex;
+}
+
+.contact :hover {
+    color: #24CAAC;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    flex-basis: 19.5%;
+    margin-bottom: 50px;
+    margin-top: 3%;
+    flex-direction: column;
+}
+
+.contact-item i {
+    font-size: 25px;
+    margin-bottom: 8%;
+    color: #ffffff;
+}
+
+.contact-item p {
+    font-size: 15px;
+    color: #ffffff;
+}
+
+.contact-item p a {
+    font-size: 15px;
+    color: #ffffff;
+}
+/* !Responsive----------------------------- */
+/* Navbar için ekran boyutu 1367 pikselin altında düğme görüntüle */
+@media screen and (max-width: 1367px) { 
+    body {
+        width: 100%; /* Ekranı %135 genişlet */
+        max-width: 100%; /* Maksimum genişlik %135 olacak */
+        margin: 0; /* Kenar boşluğunu sıfırla */
+        overflow-x: hidden; /* Yatay kaydırmayı gizle */
+      }
+    /* !navbar ----------------------------- */
+    header{
+        position:relative;
+        width: 100%;
+    }
+    #navlinks {
+        display: none;
+        flex-direction: column;
+        background-color: #000000;
+        position: absolute;
+        top: 80px;
+        left: 70%;
+        width: auto;
+    }
+    .navbar{
+        width: 90%;
+    }
+
+    #navlinks.active {
+        display: flex;
+        
+    }
+    /* !responsive navbar----------------------------- */
+    .menu-toggle {
+        display: flex;
+    }
+/* !başlıklar----------------------------- */
+    .about-title {
+        width: 110%;
+        
+    }
+
+    .about-title1 {
+        width: 100%;
+    }
+/* !cv indir bölümü----------------------------- */
+    #anasayfa {
+        width: 100%;
+    }
+
+    .cv h1 {
+        font-size: 40px;
+    }
+    #ulas{
+       margin-right: 90px;
+       font-size: 30px;
+    }
+    .cv h1 {
+        margin-left: 90px;
+    }
+
+    .cv h1 span {
+        margin-left: 50px;
+    }
+    .btn-nature{
+        margin-left: 110px;
+    }
+
+    .cv {
+        flex-direction: column;
+        display: flex;
+    }
+
+/* !hakkımda bölümü----------------------------- */
+    #hakkimda {
+        width: 100%;
+    }
+
+    .about-content {
+        flex-direction: column;
+    }
+
+    .about-img {
+        display: none;
+    }
+
+    .about-text {
+        width: 90%;
+        margin-bottom: -15%;
+    }
+
+/* !proje bölümü----------------------------- */
+    #projeler {
+        width: 100%;
+    }
+
+    .proje {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .proje-items {
+        width: 100%;
+        height: 50%;
+    }
+
+/* !iletişim bölümü----------------------------- */
+    .inneriletisim {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    #iletisim{
+        width: 100%;
+    }
+
+    .childiletisim img {
+        display: none;
+    }
+
+    .childiletisim form {
+        width: 100%;
+        padding-left: 10%;
+        padding-right: 10%;
+       
+    }
+
+    .childiletisim form input,
+    .childiletisim form textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 20px;
+    }
+/* !iletişim bilgileri bölümü----------------------------- */
+    footer{
+        width: 100%;
+    }
+    .contact-item p{
+        font-size: 10px;
+    }
+}

@@ -1,0 +1,204 @@
+html {
+    scrollbar-width: none; /* Firefox için */
+    -ms-overflow-style: none; /* Internet Explorer için */
+  }
+  
+  body::-webkit-scrollbar {
+    width: 0; /* WebKit (Chrome, Safari, Edge) için */
+  }
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+a,
+a:link,
+a:visited {
+    text-decoration: none;
+    outline: none;
+    border: none;
+}
+
+ul,
+li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+section,
+span,
+p {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    border: none;
+
+}
+
+/* !-------------------------------------------------- */
+body {
+    background-color: #000;
+}
+
+/* !Başlık--------------------- */
+.about-title {
+    margin: 60px 0;
+}
+
+.about-title h2 {
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    margin-left: -20px;
+    color: #ffffff;
+    font-size: 40px;
+    font-weight: 600;
+    font-family: 'Courier New', Courier, monospace, cursive;
+}
+
+.about-title :hover {
+    color: #24CAAC;
+}
+
+.about-title h2::after {
+    content: "";
+    width: 40px;
+    height: 3px;
+    background-color: #ffffff;
+    margin: 0 auto;
+    display: block;
+    margin-top: 10px;
+}
+
+/* !tasarım sol--------------------- */
+.web {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.web-img {
+    width: 35%;
+}
+
+.web-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin-left: -50px;
+}
+
+.web-text {
+    width: 35%;
+}
+
+.web-text p {
+    font-size: 19px;
+    text-align: center;
+    color: #ffffff;
+}
+.button1 {
+    margin-top: 10%;
+    margin-bottom: 3%;
+    width: 150px;
+    height: 50px;
+    border-radius: 50px;
+    background-color: #24CAAC;
+    color: white;
+    margin-left: 0%;
+}
+
+/* !tasarım sağ--------------------- */
+.webb {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.webb-img {
+    width: 35%;
+}
+
+.webb-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin-left: -50px;
+}
+
+.webb-text {
+    width: 35%;
+}
+
+.webb-text p {
+    font-size: 19px;
+    text-align: center;
+    color: #ffffff;
+}
+
+button {
+    margin-top: 10%;
+    margin-bottom: 3%;
+    width: 150px;
+    height: 50px;
+    border-radius: 50px;
+    background-color: #24CAAC;
+    color: white;
+    margin-left: 70%;
+}
+/* !Responsive--------------------- */
+@media screen and (max-width: 1367px) {
+    body {
+        width: 100%; /* Ekranı %135 genişlet */
+        max-width: 100%; /* Maksimum genişlik %135 olacak */
+        margin: 0; /* Kenar boşluğunu sıfırla */
+        overflow-x: hidden; /* Yatay kaydırmayı gizle */
+      }
+    /* !başlık--------------------- */
+    .about-title {
+        width: 100%;
+        margin-left: 25px;
+    }
+    .about-title h2{
+        font-size: 30px;
+    }
+
+    /* !tasaım sol--------------------- */
+    .web {
+        flex-direction: column;
+    }
+
+    .web-img {
+        width: 100%;
+        padding-left: 25%;
+    }
+
+    .web-text {
+        width: 90%;
+        padding-top: 5%;
+    }
+    .web-text button{
+        margin-left:200px;
+    }
+
+    /* !tasarım sağ--------------------- */
+    .webb {
+        flex-direction: column-reverse;
+    }
+
+    .webb-img {
+        width: 100%;
+        padding-left: 25%;
+    }
+
+    .webb-text {
+        width: 90%;
+        padding-top: 5%;
+    }
+
+}

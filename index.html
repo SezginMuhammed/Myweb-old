@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"><!-- !responsive için önemli -->
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Muhammed Sezgin</title>
+</head>
+
+<body >
+    <!-- ! navbar bölümü -->
+    <header>
+        <div class="navbar">
+            <div class="isim">
+                <h2><a href="index.html">MUHAMMED SEZGİN</a></h2>
+            </div>
+            <div class="menu-toggle" onclick="toggleMenu()">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+               
+            </div>
+            <ul id="navlinks">
+                <li><a href="#anasayfa">ANASAYFA</a></li>
+                <li><a href="#hakkimda">HAKKIMDA</a></li>
+                <li><a href="#projeler">PPROJELER</a></li>
+                <li><a href="#iletisim">İLETİŞİM</a></li>
+            </ul>
+        </div>
+    </header>
+    <!-- !Anasayfa bölümü -->
+    <section id="anasayfa">
+        <div class="cv">
+            <h1>Özgeçmişime <span> Buradan</span> </h1>
+            <h1 id="ulas" style="margin-left: 110px;">Ulaşabilirsin</h1>
+            <a href="MUHAMMED-SEZGİN-CV.pdf" class="btn-nature">CV</a>
+        </div>
+    </section>
+    <!-- !Hakkımda bölümü -->
+    <section id="hakkimda">
+        <div class="about-title">
+            <h2>HAKKIMDA</h2>
+        </div>
+        <div class="about-content">
+            <div class="about-img ">
+                <img src="img/undraw_profile_re_4a55.svg" alt="">
+            </div>
+            <div class="about-text right1">
+                <p>Merhabalar, ben Muhammed Sezgin, 17 Temmuz 2002 doğumluyum ve İstanbul'da yaşıyorum. Öğrenim hayatıma
+                    gelecek olursam, ilkokul ve ortaokulu Malazgirt İlk ve Ortaöğretim Okulu'nda okudum. Liseden de
+                    Yunus Emre Mesleki ve Teknik Anadolu Lisesi'nde Bilgisayarlı Muhasebe Bölümü'nden mezun olarak
+                    tamamladım.
+                    Üniversite yolculuğum Tekirdağı Namık Kemal Üniversitesi'yle kesişti ve buradan Bilgisayar
+                    Programcılığı bölümü mezunu olarak ayrıldım. Şu an hala devam etmekte olan Eskişehir Anadolu
+                    Üniversitesi'nde Yönetim Bilişim Sistemleri bölümünde 3. sınıf öğrencisi olarak eğitim hayatımı
+                    sürdürmekteyim. <br>
+
+                    <br> Yazılıma olan ilgim lise yıllarımda başladı ve üniversitede Bilgisayar Programcılığı bölümünü
+                    tercih etme sebebim de buydu. Bu bölümde öğrenirken kendimi geliştirmeye devam ettim. Hiç bitmeyecek
+                    bir serüvenin içine girdiğimin farkındayım, ama bu serüvende fikrinizde ve hayalinizde olan bir
+                    projeyi geliştirebildiğinizde, hayatınızdaki birçok alanda size kolaylık sağladığınıda, dünden daha
+                    iyi olduğunuzu hissettiğinizde neden yazılım sorusuna cevap bulmuş oluyorsunuz. Bu yüzden kendimi bu
+                    alanda geliştirmeye devam etmek istiyorum.
+                </p>
+
+            </div>
+        </div>
+    </section>
+    <!-- ! Projeler Bölümü -->
+    <section id="projeler">
+        <div class="about-title1">
+            <h2>PROJELER</h2>
+        </div>
+        <div class="proje">
+            <div class="proje-items" onclick="mobil()">
+                <img src="img/mobil.png" alt="">
+                <div class="overlay"><i class="fa-solid fa-mobile-screen-button"></i></div>
+            </div>
+            <div class="proje-items" onclick="web()">
+                <img src="img/web.png" alt="">
+                <div class="overlay"><i class="fa-solid fa-laptop-code"></i></div>
+            </div>
+        </div>
+    </section>
+    <!-- ! İletişim bölümü -->
+    <section id="iletisim">
+        <div class="about-title">
+            <h2>İLETİŞİME GEÇ</h2>
+        </div>
+        <div class="inneriletisim">
+            <div class="childiletisim">
+                <img src="img/undraw_personal_text_re_vqj3.svg" alt="">
+            </div>
+            <div class="childiletisim">
+                <form action="https://formsubmit.co/websezginn@gmail.com" method="POST">
+                    <input placeholder="İsim" type="text" name="isim" id="">
+                    <input placeholder="E-mail" type="email" name="mail" id="">
+                    <input placeholder="Tel" type="number" name="telefon" id="">
+                    <textarea placeholder="Mesaj" name="mesaj" id="" cols="30" rows="10"></textarea>
+                    <input type="submit" value="Gönder">
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- ! İletişim bölümü 2 -->
+    <footer>
+        <div class="about-title1">
+            <h2>İLETİŞİM</h2>
+        </div>
+        <div class="contact">
+            <div class="contact-item ">
+                <i class="fa-solid fa-phone"></i>
+                <p>0534 787 80 66</p>
+            </div>
+            <div class="contact-item ">
+                <i class="fa-solid fa-envelope"></i>
+                <p>muhammedsezgi <span>nn06@gmail.com</span></p>
+            </div>
+            <div class="contact-item ">
+                <i class="fa-solid fa-location-dot"></i>
+                <p>İstanbul,Türkiye</p>
+            </div>
+            <div class="contact-item ">
+                <i class="fa-brands fa-github"></i>
+                <p><a href="https://github.com/SezginMuhammed">GitHub</a></p>
+            </div>
+            <div class="contact-item ">
+                <i class="fa-brands fa-linkedin"></i>
+                <p><a href="https://www.linkedin.com/in/muhammed-sezgin-87494b267/">Linkedln</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+    <script>
+        function mobil() {
+            window.open("mobil.html");
+        }
+        function web() {
+            window.open("web.html");
+        }
+        function toggleMenu() {
+            var navlinks = document.getElementById("navlinks");
+            
+            if (navlinks.style.display === "flex") {
+                navlinks.style.display = "";
+            } else {
+                navlinks.style.display = "flex";
+            }
+        }
+    </script>
+</body>
+
+</html>
